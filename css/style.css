@@ -22,7 +22,7 @@ h6 {
 	font-family: "Courier New", Courier, monospace;
 	font-weight: bold;
 	line-height: 1;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	margin: 0 0 1.6rem;
 }
 
@@ -64,7 +64,7 @@ hr {
 	max-width: 1000px;
 }
 
-.header {
+header {
 	background-color: #64bcda;
 	border-bottom: 8px solid #000000;
 	margin-bottom: 3.2rem;
@@ -90,9 +90,19 @@ hr {
 	justify-content: center;
 	align-items: center;
 	text-transform: uppercase;
+	font-weight: bold;
 }
 
-.main-article {
+.pub-info-_details {
+	justify-content: flex-start;
+}
+
+.pub-info_date {
+	justify-content: flex-end;
+	text-transform: none;
+}
+
+article {
 	background-color: #e2e2e2;
 	padding: 1.6rem;
 	width: 100%;
@@ -125,6 +135,7 @@ hr {
 	color: #f2f2f2;
 	margin: 0 0 1.6rem;
 	font-size: 0.9rem;
+	
 }
 
 .main-sidebar_thumb {
@@ -159,7 +170,7 @@ hr {
 	display: block;
 }
 
-.footer {
+footer {
 	text-align: center;
 }
 
@@ -174,11 +185,23 @@ hr {
 		width: 60%;
 		border-radius: 0.6rem;
 		margin: 0;
+		display: flex;
+		flex-direction: column;
 	}
 
 	.main-sidebar {
 		width: 40%;
 		border-radius: 0.6rem;
 		margin: 0;
+		display: flex;
+		flex-direction: column;
+
 	}
+
+	.column {
+		display: flex;
+		margin: auto;
+		gap: 30px;
+	}
+
 }
